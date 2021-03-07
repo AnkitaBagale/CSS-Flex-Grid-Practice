@@ -1,0 +1,222 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+:root{
+    --primary-color: rgba(29,161,242,1.00);
+    --secondary-color: rgb(217, 217, 217);
+    --divider-color: #1c2025;
+    --border-color: #2F3336;
+}
+/* side bar navigation */
+.CTA-with-thumbnail .thumb-of-CTA{
+    padding-right: 0.3rem;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    grid-area: sidebar;
+    padding: 1rem 2rem 1rem 0;
+}
+.sidebar-item{
+    padding-bottom: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.primary-link{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+.secondary-link{
+    background-color: transparent;
+    color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 1.5rem;
+    border: 2px solid var(--primary-color);
+    text-align: center;
+    display: inline-block;
+}
+
+/* heading of the page */
+.heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    grid-area: heading;
+    border: 1px solid var(--border-color);
+    height: 30px;
+}
+.heading span i{
+    color: var(--primary-color);
+}
+/* input tweet area */
+.input-post-area{
+    width: 100%;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.input-post-area textarea{
+    background-color: transparent;
+    border: none;
+    resize: none;
+    margin: 1.5rem 0 1rem ;
+    font-size: 1.1rem;
+}
+
+.input-post{
+    grid-area: inputSection;
+    display: flex;
+    border: 1px solid var(--border-color);
+}
+.divider-thick{
+    background-color: var(--divider-color);
+    height: 7px;
+    width: 100%;
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    box-sizing: border-box;
+}
+.profile-img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    margin: 0.5rem 1rem;
+}
+.attachment-options{
+    display: flex;
+}
+.attachment-options i{
+    padding: 1rem 0.5rem;
+    color: var(--primary-color);
+}
+.attachment-section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.attachment-section .primary-link{
+    height: 20px;
+}
+
+/* posts view area section */
+.card{
+    display: flex;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.post-section{
+    grid-area: postSection;
+}
+.text-section{
+    padding-top: 0.5rem;
+}
+.reaction-buttons{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    padding-top: 1rem;
+}
+.reaction-buttons i{
+    padding-right: 0.5rem;
+}
+.tweet-content{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+.user-name{
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+.user-id{
+    font-weight: 300;
+    font-size: 15px; 
+}
+.flex-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Explore section */
+.explore-section{
+    grid-area: explore;
+    padding: 0 1rem;
+}
+.search-bar{
+    padding: 0.8rem 1.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--divider-color);
+    margin: 4px 0 0;
+}
+.search-bar input{
+    background-color: transparent;
+    border: none;
+}
+.search-bar i{
+    color: #6E767D;
+}
+.explore-section-card-container{
+    border-radius: 1rem;
+    background-color: var(--divider-color);
+    margin-top:1rem;
+}
+.explore-section-card-container h3{
+    padding: 0.8rem 1.5rem;
+    font-weight: 500;
+}
+.explore-card{
+    padding: 0.8rem 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+.explore-card h4{
+    font-weight: 500;
+    padding: 5px 0;
+}
+.explore-card small{
+    /* padding: 0.8rem 1.5rem 0; */
+    display: block;
+    font-weight: 300;
+}
+.explore-section-card-container .card{
+    border:none;
+    border-top: 1px solid var(--border-color);
+    padding: 0.8rem 1.5rem;
+    align-items: center;
+}
+
+.explore-section-card-container .card .text-section{
+    flex-grow:1;
+}
+/* grid-container */
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". sidebar sidebar heading heading heading heading heading explore explore explore"
+    ". sidebar sidebar inputSection inputSection inputSection inputSection inputSection explore explore explore"
+    ". sidebar sidebar postSection postSection postSection postSection postSection explore explore explore"
+    ". sidebar sidebar postSection postSection postSection postSection postSection explore explore explore";
+}

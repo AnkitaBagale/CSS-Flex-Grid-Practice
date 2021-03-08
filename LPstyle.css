@@ -125,8 +125,9 @@ h2{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem
 }
+
 .grid-3-layout .round-edges{
-    border: 10px solid var(--secondary-color);
+    border: 5px solid var(--secondary-color);
 }
 
 .border-round{
@@ -135,4 +136,14 @@ h2{
 .small-spacer{
     height: 30px;
     width: 100%;
+}
+.self-left{
+    justify-self: left;
+}
+.self-right{
+    justify-self: right;
+}
+.text-center{
+    text-align: center;
+    align-self: center;
 }

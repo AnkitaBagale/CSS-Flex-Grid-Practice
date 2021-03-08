@@ -1,3 +1,6 @@
+
+@import url("./twitterlayout.mobile.css");
+
 *{
     font-family: 'Roboto', sans-serif;
     color: var(--secondary-color);
@@ -23,6 +26,7 @@ body{
 }
 
 .sidebar {
+
     display: flex;
     flex-direction: column;
     grid-area: sidebar;
@@ -35,6 +39,9 @@ body{
 a{
     text-decoration: none;
     display: inline-block;
+}
+.hamburger{
+    display: none;
 }
 .primary-link{
     background-color: var(--primary-color);
@@ -58,6 +65,7 @@ a{
 /* heading of the page */
 .heading{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem;
     grid-area: heading;
@@ -81,6 +89,7 @@ a{
     resize: none;
     margin: 1.5rem 0 1rem ;
     font-size: 1.1rem;
+    word-break: break-all;
 }
 
 .input-post{
@@ -104,6 +113,7 @@ a{
 }
 .attachment-options{
     display: flex;
+    flex-wrap: wrap;
 }
 .attachment-options i{
     padding: 1rem 0.5rem;
@@ -111,6 +121,7 @@ a{
 }
 .attachment-section{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
 }
@@ -121,6 +132,7 @@ a{
 /* posts view area section */
 .card{
     display: flex;
+    flex-wrap: wrap;
     padding: 0.5rem;
     border: 1px solid var(--border-color);
 }
@@ -133,6 +145,7 @@ a{
 }
 .reaction-buttons{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     font-weight: 300;
     padding-top: 1rem;
@@ -156,6 +169,7 @@ a{
 }
 .flex-space-between{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 

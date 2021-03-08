@@ -1,0 +1,68 @@
+@media screen and (max-width: 768px){
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "hamburger ."
+        "sidebar sidebar"
+        "inputSection inputSection"
+        "postSection postSection"
+        "heading explore";
+        position: relative;
+    }
+    .sidebar{
+        padding: 2rem;
+        display: none;
+    }
+    .sidebarActive{
+        display: flex;
+    }
+    .sidebar .primary-link{
+        display: none;
+    }
+    .heading span{
+        display: none;
+    }
+    .heading{
+        border: none;
+    }
+    .input-post-area{
+        padding-right: 0;
+    }
+    .search-bar{
+        background-color: transparent;
+        text-align: right;
+    }
+    .search-bar input{
+        display: none;
+    }
+    .explore-section-card-container{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        grid-area: hamburger;
+        justify-self: left;
+        padding: 2rem 2rem;
+    }
+    .line{
+        width: 24px;
+        height: 2px;
+        margin: 4px 0;
+        background-color: white;
+        transition: transform 200ms ease;
+    }
+    .active .line2{
+        display: none;
+    }
+    .active .line3{
+        position: relative;
+        transform: rotate(45deg);
+        top:-3px;
+    }
+    .active .line1{
+        position: relative;
+        transform: rotate(-45deg);
+        bottom: -3px;
+    }
+
+}

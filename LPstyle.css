@@ -1,0 +1,138 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+:root{
+    --primary-color: #00BCD4;
+    --secondary-color: #D1565F;
+    --title-color: #302E5A;
+}
+h1, h2{
+color: var(--title-color)
+}
+.flex-space-around{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+.nav ul{
+    list-style: none;
+    padding-inline-start: 0;
+}
+.nav ul li{
+    padding-left: 1.5rem;
+}
+.nav{
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 500;
+}
+.nav-logo-img{
+    padding-right: 0.5rem;
+}
+.spacer{
+    width: 100%;
+    height: 60px;
+}
+.grid-2-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.round-edges{
+    border-radius: 50%;
+    border: 10px solid var(--secondary-color);
+    width:100%;
+    max-width: 300px;
+}
+section {
+    padding: 0 4rem;
+}
+.card-text h1{
+    font-size: 44px;
+    padding-bottom: 0.5rem;
+    font-weight:700;
+}
+.category-tag{
+    color: var(--secondary-color);
+    padding-bottom: 0.5rem;
+
+}
+.grid-4-layout{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    overflow: hidden;
+    background-color:#EFEFEF ;
+}
+
+.ow-bg{
+    background-color:#EFEFEF;
+    margin: 1.5rem 0;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid var(--primary-color);
+}
+.primary-bg{
+    background-color:var(--primary-color);
+    padding: 1.5rem; 
+    display: flex;
+    flex-direction: column;  
+}
+.ow-bg p, .primary-bg p{
+    justify-self: flex-end;
+    /* padding-top: 1rem; */
+    font-weight: 500;
+}
+.primary-bg p{
+    color: var(--title-color);  
+}
+.primary-bg .category-tag{
+    color: white;
+}
+.ow-bg:nth-of-type(3){
+    border-right: none;
+}
+h2{
+    font-size: 32px;
+}
+.primary-link{
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: var(--secondary-color);
+}
+.padding-top-apply{
+    padding-top: 1rem;
+}
+.grid-30-70-layout{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 2rem;
+}
+
+.grid-3-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem
+}
+.grid-3-layout .round-edges{
+    border: 10px solid var(--secondary-color);
+}
+
+.border-round{
+    border-radius: 0.5rem;
+}
+.small-spacer{
+    height: 30px;
+    width: 100%;
+}

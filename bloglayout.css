@@ -9,9 +9,13 @@
     width: 100%;
     height: 40px;
 }
+.width80{
+    width: 80%;
+    margin: auto;
+}
 .header{
     background-color: black;
-    color: white;
+    color: white; 
 }
 h4, h2{
     color: white;
@@ -26,16 +30,19 @@ h5{
     list-style: none;
     padding-inline-start: 0;
     display: flex;
-    margin: 1rem;
+    margin: 1.5rem 0;
+    
 }
 .navbar ul li{
-    padding: 0.5rem;
+    padding-left: 1rem;
+}
+.navbar ul li:first-of-type{
+    padding-left: 0rem;
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 2rem;
 }
 
 .hero-banner{
@@ -91,7 +98,6 @@ h5{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap:2.5rem;
-    width: 80%;
 }
 
 .card-category, .card-title, .card-desc{
@@ -99,7 +105,6 @@ h5{
 }
 
 .grid-2cards-layout{
-    width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
@@ -120,23 +125,32 @@ h5{
 }
 
 @media screen and (max-width: 768px){
+    .width80{
+        width: 100%;
+    }
 
     .grid-2cards-layout,.grid-3cards-layout{
         grid-template-columns: 1fr;
         margin: 0;
-        width: 100%;
+    
     }
-    .card > h4, .card>h2, .card>p, .card>.card-author{
-        padding-left: 1rem;
-        padding-right: 1rem;
+    .main-section-page{
+        padding: 1.5rem;
     }
+
     .spacer{
-        height: 0;
+        height: 30px;
     }
     .no-grid-gap{
         gap: 0
     }
     .grid-3cards-layout{
         margin: 1rem 0;
+    }
+    .navbar{
+        padding: 0 1.5rem;
+    }
+    .navbar ul.social-share{
+        display: none;
     }
 }
